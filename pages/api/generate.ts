@@ -44,7 +44,7 @@ export default async function handler(
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      Authorization: "Token " + process.env.REPLICATE_API_KEY,
+      Authorization: "Token 3b9204e315f0c91ee6aaf7a9ad5d70f167a9ab0e"// + process.env.REPLICATE_API_KEY,
     },
     body: JSON.stringify({
       version:
@@ -65,7 +65,7 @@ export default async function handler(
       method: "GET",
       headers: {
         "Content-Type": "application/json",
-        Authorization: "Token " + process.env.REPLICATE_API_KEY,
+        Authorization: "Token 3b9204e315f0c91ee6aaf7a9ad5d70f167a9ab0e",// + process.env.REPLICATE_API_KEY,
       },
     });
     let jsonFinalResponse = await finalResponse.json();
